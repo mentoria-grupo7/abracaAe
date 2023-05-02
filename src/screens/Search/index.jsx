@@ -1,11 +1,16 @@
 import React from "react";
-import { View } from "react-native";
+import { View, TextInput } from "react-native";
 
-export const Search = ()=>{
+import { styles } from "./styles"
 
-    return(
-        <View>
-            Tela de Pesquisa
+export const Search = () => {
+
+    return (
+        <View style={styles.container}>
+            <View style={styles.inputContainer}>
+                <TextInput style={styles.input} placeholder="O que vamos buscar?" />
+            </View>
+
         </View>
     )
 }
