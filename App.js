@@ -1,21 +1,13 @@
-import React from 'react';
-import { StyleSheet, Text,StatusBar, View } from 'react-native';
-
-import {Login} from './src/screens/Login'
-import {Cadastro} from './src/screens/Cadastro'
-import {Perfil} from './src/screens/Perfil'
-
-
+import React from "react";
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, SafeAreaView,Image } from "react-native";
+import { Home } from "./src/screens/Home/index";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      {/*<Login></Login>*/}
-      {/*<Cadastro></Cadastro>*/}
-      <Perfil> </Perfil>
-
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Home />
+    </SafeAreaView>
   );
 }
 
@@ -23,6 +15,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    
-  },
+    paddingTop: 20,
+  }
 });

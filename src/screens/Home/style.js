@@ -1,7 +1,12 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-    container: {
-        color: 'red'
-    }
-})
+  cabecalho:{
+    width:'100%',
+    resizeMode:'contain',
+   },
+   container:{
+    flexDirection:'column',
+    justifyContent:'center',
+  }
+});
