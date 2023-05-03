@@ -1,7 +1,7 @@
 import React from "react";
 import { styles } from "./style";
-import { View, Text, Image, StyleSheet,ImageBackground, ScrollView,TouchableOpacity} from "react-native";
-import {TelaRolagem} from "../../components/home/telaRolagem"
+import { View, Image} from "react-native";
+import {TelaRolagem} from '../../Components/home/telaRolagem'
 
 export const Home = () => {
   return (
