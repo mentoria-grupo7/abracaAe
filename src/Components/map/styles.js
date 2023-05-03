@@ -5,11 +5,12 @@ export  const styles = StyleSheet.create({
     container: {
       flex: 1,
       background: "#fff",
-      justifyContent:'flex-end'
+      justifyContent: 'center',
+      alignContent: 'center',
+      alignItems: 'center'
      },
     map: {
       width: "100%",
-      height: "60%",
-      
-        },
+      height: "80%",
+       },
   });

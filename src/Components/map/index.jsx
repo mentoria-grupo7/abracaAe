@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import MapView, { Marker } from "react-native-maps";
 import { styles } from "./styles";
+import { Cabecalho } from "./header";
 
 let locationONGs = [
   {
@@ -43,6 +44,7 @@ export default function Map() {
       // MAP EM SI
 
       <View style={styles.container}>
+        <Cabecalho/>
         <MapView
           style={styles.map}
           onRegionChange={onRegionChange}
