@@ -9,17 +9,20 @@ export const styles = StyleSheet.create({
       flex: 1,
       margin: 8,
       height: 180.12,
-      backgroundColor: '#D9D9D9',
+      backgroundColor: '#F1C15D',
       borderRadius: 30,
       alignItems: 'center',
       justifyContent: 'center',
     },
     image: {
-      marginBottom: 17,
+      marginBottom: 0,
+      width: 120,
+      height: 120,
     },
     subTitle: {
       fontSize: 14,
       fontWeight: 'bold',
-      color: '#597E8D'
+      color: '#F4F4F4',
+      textTransform: 'uppercase'
     },
   });
