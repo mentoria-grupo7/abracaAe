@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import MapView, { Marker } from "react-native-maps";
+import { styles } from "./styles";
 
 let locationONGs = [
   {
@@ -21,10 +22,10 @@ let locationONGs = [
   },
 ];
 
-export default function OngLocalization() {
+export default function map() {
   const onRegionChange = (region) => {
     //   console.log(region)};
-
+  }
     const showLocationsONGs = () => {
       return locationONGs.map((item, index) => {
         return (
@@ -37,7 +38,7 @@ export default function OngLocalization() {
         );
       });
     };
-
+  
     return (
       // MAP EM SI
 
@@ -57,20 +58,6 @@ export default function OngLocalization() {
       </View>
     );
   };
-  return(
-    onRegionChange()
-  )
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    background: "#fff",
-    justifyContent:'flex-end'
-   },
-  map: {
-    width: "100%",
-    height: "60%",
-    
-      },
-});
+
+
