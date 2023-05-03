@@ -1,8 +1,7 @@
 import React from "react";
-import { StyleSheet, Text, SafeAreaView,Image } from "react-native";
+import { StyleSheet, SafeAreaView } from "react-native";
 import { Home } from "./src/screens/Home/index";
-import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView } from 'react-native';
+import OngLocalization from './src/screens/OngLocalization';
 
 export default function App() {
   return (
@@ -16,6 +15,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    paddingTop: 20,
-  }
+
+  },
+  map:{
+    width:'80%',
+    height:'80%',
+    alignSelf:'center',
+    borderColor:'red'
+  },
+
+
 });

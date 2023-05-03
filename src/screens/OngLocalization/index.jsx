@@ -1,13 +1,11 @@
-import React from "react";
-import { View } from "react-native";
+import React from "react"
+import Map from "../../Components/map"
 
-export const OngLocalization = () => {
+export default function OngLocalization (){
 
-    return (
-            <View> 
-                <Text>
-                    Tela de localização
-                </Text>
-            </View>
-        )
+
+
+  return(
+    <Map/>
+  )
 }
