@@ -7,7 +7,6 @@ import {
     Image,
 
 } from 'react-native';
-
 import {styles} from './style'
 
 export const Cadastro= () => {
@@ -60,14 +59,6 @@ export const Cadastro= () => {
             <TouchableOpacity style={styles.button}>
                     <Text style={styles.buttonText}> Cadastrar </Text>               
                 </TouchableOpacity>
-
-
-
-
-
-
-
-
         </View>
      )
 }
