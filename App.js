@@ -1,12 +1,13 @@
 import React from "react";
 import { StyleSheet, SafeAreaView } from "react-native";
-
+//import { Home } from "./src/screens/Home/index";
 import OngLocalization from './src/screens/OngLocalization';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <OngLocalization/>
+      
     </SafeAreaView>
   );
 }

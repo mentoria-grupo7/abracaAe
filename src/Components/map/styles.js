@@ -10,10 +10,7 @@ export  const styles = StyleSheet.create({
       alignItems: 'center'
      },
     map: {
-      marginTop: 40,
       width: "100%",
-      height: "70%",
-      
-      
-        },
+      height: "80%",
+       },
   });
