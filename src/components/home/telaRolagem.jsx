@@ -1,5 +1,5 @@
-import { CardHome } from './cardHome'
-import { Botoes } from './botoes'
+import { CardHome } from './cardItem'
+import { Botoes } from './btnFiltrar'
 import { ScrollView,StyleSheet,View } from 'react-native'
 
 export const TelaRolagem = ()=>{
