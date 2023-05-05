@@ -1,12 +1,14 @@
 import React from "react";
 import { StyleSheet, SafeAreaView } from "react-native";
 //import { Home } from "./src/screens/Home/index";
-import { Search } from "./src/screens/Search";
+//import { Search } from "./src/screens/Search";
+//import OngLocalization from './src/screens/OngLocalization';
+import { MyStack } from "./src/Routes";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Search/>
+      <MyStack/>
       
     </SafeAreaView>
   );
