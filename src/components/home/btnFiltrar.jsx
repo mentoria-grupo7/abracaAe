@@ -16,7 +16,8 @@ const styles = StyleSheet.create({
     container:{
         flexDirection:'row',
         justifyContent:"space-between",
-        paddingVertical:5
+        paddingVertical:5,
+        paddingHorizontal:10
     },
     botao:{
         width:'45%',

@@ -1,17 +1,38 @@
 import React from "react"
-import {View,Text,Image,StyleSheet} from 'react-native'
+import {View,Text,Image,StyleSheet,FlatList} from 'react-native'
+
+const DATA = [
+    {id:'1' , titulo:'Frutas e verduras' , descricao:'Precisamos de frutas e veduras para doar na região...' , dataRegiao:'06/jan - Sorocaba/SP' , imagem: require("../../../assets/imagem-home/imagem2.png")},
+    {id:'2' , titulo:'Frutas e verduras' , descricao:'Precisamos de frutas e veduras para doar na região...' , dataRegiao:'06/jan - Sorocaba/SP' , imagem: require("../../../assets/imagem-home/imagem2.png")},
+    {id:'3' , titulo:'Frutas e verduras' , descricao:'Precisamos de frutas e veduras para doar na região...' , dataRegiao:'06/jan - Sorocaba/SP' , imagem: require("../../../assets/imagem-home/imagem2.png")},
+    {id:'4' , titulo:'Frutas e verduras' , descricao:'Precisamos de frutas e veduras para doar na região...' , dataRegiao:'06/jan - Sorocaba/SP' , imagem: require("../../../assets/imagem-home/imagem2.png")},
+    {id:'5' , titulo:'Frutas e verduras' , descricao:'Precisamos de frutas e veduras para doar na região...' , dataRegiao:'06/jan - Sorocaba/SP' , imagem: require("../../../assets/imagem-home/imagem2.png")},
+    {id:'6' , titulo:'Frutas e verduras' , descricao:'Precisamos de frutas e veduras para doar na região...' , dataRegiao:'06/jan - Sorocaba/SP' , imagem: require("../../../assets/imagem-home/imagem2.png")},
+    {id:'7' , titulo:'Frutas e verduras' , descricao:'Precisamos de frutas e veduras para doar na região...' , dataRegiao:'06/jan - Sorocaba/SP' , imagem: require("../../../assets/imagem-home/imagem2.png")}
+];
 
 
-export const CardHome = (props)=>{
+
+export const CardItem = ()=>{
+
+const renderItem  = ({item}) => (
+        <View style={styles.card}>
+        <Image  source={item.imagem}/>
+        <View style={styles.textoBox}>
+            <Text style = {{fontWeight:'bold'}}>{item.titulo}</Text>
+            <Text>{item.descricao}</Text>
+            <Text style = {{fontStyle:'italic'}}>{item.dataRegiao}</Text>
+        </View>
+    </View>
+    )
+
     return(
-            <View style={styles.card}>
-                    <Image  source={props.imagem}/>
-                    <View style={styles.textoBox}>
-                        <Text style = {{fontWeight:'bold'}}>{props.titulo}</Text>
-                        <Text>{props.descricao}</Text>
-                        <Text style = {{fontStyle:'italic'}}>{props.data}</Text>
-                    </View>
-                </View>
+        <FlatList
+        data = {DATA}
+        renderItem = {renderItem}
+        keyExtractor={item => item.id}
+        contentContainerStyle = {styles.contentContainer}
+        />
     
     )
 }
@@ -28,5 +49,9 @@ const styles = StyleSheet.create({
       textoBox:{
         width:'70%',
         rowGap:4
+      },
+      contentContainer: {
+        paddingHorizontal:25,
+        rowGap:25,
       }
 })
