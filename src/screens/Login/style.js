@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
     },
 
     containerLogo:{
-        flex:2,
+        flex:1,
         backgroundColor:'#4ECDC4',
         alignItems:'center',
         justifyContent:'center',
@@ -23,39 +23,38 @@ export const styles = StyleSheet.create({
 
     title:{
         fontSize:18,
-        marginTop:20,
+        margin:10,
         
     },
 
     input:{
-        width:350,
         backgroundColor:'#F3F3F3',
-        height:35,
-        marginBottom:10,
+        padding:10,
+        margin:15,
+        marginTop:3,
         borderRadius:8,
         fontSize:16,
-        paddingHorizontal:8,
-        paddingVertical:8,
+        
     },
 
     textForget:{
         fontSize:14,
         padding:5,
         fontWeight:'bold',
+        margin:2,
+        
     },
 
 
     button:{
         backgroundColor:'#69419D',
-        width:213,
-        height:40,
         borderRadius:76,
-        flexDirection:'row',
         justifyContent:'center',
         alignItems:'center',
-        padding:10,
-        left:79,
-        margin:3,
+        padding:15,
+        margin:15,
+        fontSize:16,
+       
         
     },
 

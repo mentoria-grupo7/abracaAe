@@ -1,10 +1,12 @@
 import React from 'react';
+import Icon from 'react-native-vector-icons/AntDesign';
 import {
     Text, 
     TextInput, 
     TouchableOpacity, 
     View,
     Image,
+    
 
 } from 'react-native';
 
@@ -18,55 +20,54 @@ export const Cadastro= () => {
                 Seja um Voluntário
             </Text>
             
-            <Text style={styles.title}> Digite seu nome </Text>
+            
             <TextInput
-                    placeholder='Nome'
-                    style={styles.input}
-                >
-            </TextInput>
-
-            <Text style={styles.title}> E-mail </Text>
-            <TextInput
-                    placeholder='email@dominio.com.br'
-                    style={styles.input}
-                >
-            </TextInput>
-
-            <Text style={styles.title}> Crie sua senha </Text>
-            <TextInput
-                    placeholder='Senha'
-                    style={styles.input}
-                >
-            </TextInput>
-
-            <Text style={styles.title}> Repita sua senha </Text>
-            <TextInput
-                    placeholder='Senha'
+                    placeholder='Digite seu nome'
                     style={styles.input}
                 >
             </TextInput>
 
             
+            <TextInput
+                    placeholder='Digite seu e-mail'
+                    style={styles.input}
+                >
+            </TextInput>
 
-            <View style={styles.containerRedesSociais}>
-                
-                <Image
-                source={require('./assets/redesSociais.png')}
-                style={{width:'50%'}}
-                resizeMode='contain'
-                ></Image>
-            </View>
+            
+            <TextInput
+                    placeholder='Crie uma senha'
+                    style={styles.input}
+                >
+            </TextInput>
 
-            <TouchableOpacity style={styles.button}>
-                    <Text style={styles.buttonText}> Cadastrar </Text>               
+            
+            <TextInput
+                    placeholder='Repita a senha acima'
+                    style={styles.input}
+                >
+            </TextInput>
+          
+            <TouchableOpacity style={styles.buttonCadastro}>
+                    <Text style={styles.buttonText}> Cadastrar. Seja bem vindo. </Text>               
                 </TouchableOpacity>
 
+            <View style={styles.email}>
 
+                <Icon style={styles.icon} name="google" size={25} color='#fff' />
+                <TouchableOpacity style={styles.button}>
+                        <Text style={styles.buttonText}> Entrar com a conta do Gmail </Text>               
+                </TouchableOpacity>
 
-
-
-
-
+            </View>
+            <View style={styles.redesSociais}>
+                <Icon style={styles.icon} name="facebook-square" size={25} color='#fff' />
+                
+                <TouchableOpacity style={styles.button}>
+                        <Text style={styles.buttonText}> Entrar com a conta do Facebook </Text>               
+                </TouchableOpacity>
+            </View>
+                
 
         </View>
      )

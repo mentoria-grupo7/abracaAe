@@ -1,12 +1,13 @@
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, SafeAreaView,Image } from "react-native";
-import { Home } from "./src/screens/Home/index";
+import { Login } from "./src/screens/Login/index";
+
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Home />
+      <Login />
     </SafeAreaView>
   );
 }
@@ -14,7 +15,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#4ECDC4',
     paddingTop: 20,
   }
 });
