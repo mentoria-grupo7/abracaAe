@@ -9,7 +9,6 @@ import {
     
 
 } from 'react-native';
-
 import {styles} from './style'
 
 export const Cadastro= () => {
@@ -72,8 +71,6 @@ export const Cadastro= () => {
                         <Text style={styles.buttonText}> Entrar com a conta do Facebook </Text>               
                 </TouchableOpacity>
             </View>
-                
-
         </View>
      )
 }
