@@ -1,16 +1,14 @@
 import React from "react";
+import { Home } from "./src/screens/Home";
+import { SafeAreaView,StyleSheet,Image } from 'react-native';
+import { CardItem } from "./src/Components/home/cardItem";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, SafeAreaView,Image } from "react-native";
-import { Login } from "./src/screens/Login/index";
-import { Search } from "./src/screens/Search";
-
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Login />
-      <Search/>
-
+        <StatusBar />
+        <Home />
     </SafeAreaView>
   );
 }
@@ -21,5 +19,4 @@ const styles = StyleSheet.create({
     backgroundColor: '#4ECDC4',
     paddingTop: 20,
   },
-
 });
