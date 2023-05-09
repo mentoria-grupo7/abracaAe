@@ -16,6 +16,10 @@ export const styles = StyleSheet.create({
         
     },
 
+    returnIcon:{
+        padding:15,
+        
+    },
    
 
     input:{

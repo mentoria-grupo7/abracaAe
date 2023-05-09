@@ -16,6 +16,11 @@ export const Cadastro= () => {
     
     return (
         <View style={styles.container}>
+            <Icon style = {styles.returnIcon} name ='left' size = {25} color = '#698499'
+
+            />
+
+
             <Text style={styles.content}>
                 Seja um Voluntário
             </Text>
