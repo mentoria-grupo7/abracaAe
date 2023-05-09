@@ -4,13 +4,17 @@ import {
     TextInput, 
     TouchableOpacity, 
     View,
-    Image,
-
-} from 'react-native';
+    Image,} from 'react-native';
 
 import {styles} from './style'
 
-export const Login = () =>{
+export const Login = ({navigation}) =>{
+    
+    function openCadastro () {
+        navigation.navigate('Cadastro');
+                    
+    }
+
     return(
         <View style={styles.container} >
             <View style={styles.containerLogo}>
@@ -22,6 +26,7 @@ export const Login = () =>{
             </View>
 
             <View style={styles.containerAcesso}>
+                
                 <Text style={styles.title}> Email </Text>
                 <TextInput
                     placeholder='Digite seu e-mail'
@@ -35,16 +40,18 @@ export const Login = () =>{
                     style={styles.input}
                 >
                 </TextInput>
-
                 
                 <Text style={styles.textForget}>Esqueceu a senha?</Text>
-
                 <TouchableOpacity style={styles.button}>
-                    <Text style={styles.buttonText}> Acessar </Text>               
+
+                
+                
+                <Text style={styles.buttonText}> Acessar </Text>               
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.button}>
+                <TouchableOpacity style={styles.button} onPress ={openCadastro}>
                     <Text style={styles.buttonText}> Cadastre-se</Text>
+                    
                 </TouchableOpacity>                
 
             </View>
