@@ -1,8 +1,7 @@
 import React from "react";
-import { Home } from "./src/screens/Home";
 import { SafeAreaView,StyleSheet,Image } from 'react-native';
-import { CardItem } from "./src/Components/home/cardItem";
 import { StatusBar } from "expo-status-bar";
+import {Routes} from './src/routes'
 
 export default function App() {
   return (
