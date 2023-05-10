@@ -10,13 +10,15 @@ import {
 
 } from 'react-native';
 import {styles} from './style'
+import {HeaderComponent} from '../../components/header'
 
 export const Cadastro= () => {
     
     return (
         <View style={styles.container}>
-            <Icon style = {styles.returnIcon} name ='left' size = {25} color = '#698499'
 
+            <HeaderComponent description = 'Login'
+            
             />
 
 

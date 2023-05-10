@@ -22,6 +22,7 @@ export default function AutenticacaoRoutes () {
             <Screen
                 name = 'Cadastro'
                 options={{
+                    headerShown: false,
                     
                 }}
                 component = { Cadastro }
