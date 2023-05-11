@@ -2,12 +2,14 @@ import React from "react";
 import { SafeAreaView,StyleSheet,Image } from 'react-native';
 import { StatusBar } from "expo-status-bar";
 import {Routes} from './src/routes'
+import { Home } from "./src/screens/Home";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar />
-      <Routes />
+      <Home />
+      {/* <Routes /> */}
     </SafeAreaView>
   );
 }
