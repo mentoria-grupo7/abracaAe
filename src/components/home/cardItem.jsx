@@ -1,5 +1,5 @@
 import React from "react"
-import {View,Text,Image,StyleSheet,FlatList} from 'react-native'
+import {View,Text,Image,StyleSheet,FlatList, TouchableOpacity} from 'react-native'
 
 const DATA = [
     {id:'1' , titulo:'Frutas e verduras' , descricao:'Precisamos de frutas e veduras para doar na região...' , dataRegiao:'06/jan - Sorocaba/SP' , imagem: require("../../../assets/imagem-home/imagem2.png")},
@@ -12,11 +12,11 @@ const DATA = [
 ];
 
 
-
 export const CardItem = ()=>{
 
 const renderItem  = ({item}) => (
-        <View style={styles.card}>
+    <TouchableOpacity>
+        <View style={styles.card} >
         <Image  source={item.imagem}/>
         <View style={styles.textoBox}>
             <Text style = {{fontWeight:'bold'}}>{item.titulo}</Text>
@@ -24,6 +24,7 @@ const renderItem  = ({item}) => (
             <Text style = {{fontStyle:'italic'}}>{item.dataRegiao}</Text>
         </View>
     </View>
+    </TouchableOpacity>
     )
 
     return(

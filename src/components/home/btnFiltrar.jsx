@@ -4,7 +4,7 @@ import {View,Text,TouchableOpacity,StyleSheet} from 'react-native'
 export const Botoes = () => {
 
 return(
-        <View style = {styles.container}>
+        <View style = {styles.container} >
             <TouchableOpacity style = {styles.botao}>
                 <Text style ={{fontWeight:'bold'}}>Categoria     V</Text>
             </TouchableOpacity>
