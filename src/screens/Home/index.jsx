@@ -1,15 +1,15 @@
 import React from "react";
 import { styles } from "./style";
-import { View, Image} from "react-native";
-import { CardItem } from "../../Components/home/cardItem";
-import { Botoes } from "../../Components/home/btnFiltrar";
+import { View, Image, TouchableOpacity,Text} from "react-native";
+import { CardItem } from "../../components/home/cardItem";
+import { Botoes } from "../../components/home/btnFiltrar";
 
 
-export const Home = () => {
+export const Home = ({navigation}) => {
   return (
     <View style = {styles.container}>
       <Botoes/>
-      <CardItem />
+      <CardItem navigation = {navigation}/>
     </View>
   );
 };

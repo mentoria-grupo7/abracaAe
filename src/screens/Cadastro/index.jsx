@@ -10,7 +10,7 @@ import {
 
 } from 'react-native';
 import {styles} from './style'
-import {HeaderComponent} from '../../Components/header/index'
+import {HeaderComponent} from '../../components/header/index'
 
 export const Cadastro= () => {
     

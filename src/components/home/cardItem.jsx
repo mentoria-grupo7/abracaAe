@@ -12,18 +12,18 @@ const DATA = [
 ];
 
 
-export const CardItem = ()=>{
+export const CardItem = (navigation)=>{
 
 const renderItem  = ({item}) => (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={()=>{navigation.navigation.navigate('OngLocalization')}}>
         <View style={styles.card} >
-        <Image  source={item.imagem}/>
-        <View style={styles.textoBox}>
-            <Text style = {{fontWeight:'bold'}}>{item.titulo}</Text>
-            <Text>{item.descricao}</Text>
-            <Text style = {{fontStyle:'italic'}}>{item.dataRegiao}</Text>
+            <Image  source={item.imagem}/>
+            <View style={styles.textoBox}>
+                <Text style = {{fontWeight:'bold'}}>{item.titulo}</Text>
+                <Text>{item.descricao}</Text>
+                <Text style = {{fontStyle:'italic'}}>{item.dataRegiao}</Text>
+            </View>
         </View>
-    </View>
     </TouchableOpacity>
     )
 
