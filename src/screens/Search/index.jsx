@@ -1,4 +1,4 @@
-import { View, TextInput, ScrollView } from "react-native";
+import { View, TextInput } from "react-native";
 import { styles } from "./styles"
 import { FlatList } from "react-native";
 import { Image } from "react-native";
@@ -25,7 +25,7 @@ export const Search = () =>{
     function renderCard(item){
         return (
             <View style={styles.card}>
-              <Image style={styles.image} source={item.url}/>
+              <Image style={styles.image} source={item.uri}/>
               <Text style={styles.subTitle}>{item.title}</Text>
             </View>
         );
@@ -46,15 +46,14 @@ export const Search = () =>{
                     placeholder="O que vamos buscar?" 
                 />
             </View>
-            
-        <FlatList
-          data={data}
-          renderItem={({item}) => renderCard(item)}
-          keyExtractor={(item) => item.id}
-          numColumns={numColumns}
-          contentContainerStyle={styles.container}
-        />
-      
+                <FlatList
+                  style={styles.flatContainer}
+                  data={data}
+                  renderItem={({item}) => renderCard(item)}
+                  keyExtractor={(item) => item.id}
+                  numColumns={numColumns}
+                  contentContainerStyle={styles.container}
+                />
         </View>
     )
 }
