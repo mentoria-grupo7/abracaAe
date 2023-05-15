@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 24,
-        backgroundColor: "#F3F3F3"
+        backgroundColor: "#F3F3F3",
     },
     inputContainer: {
         marginTop: 32,
@@ -42,6 +42,10 @@ export const styles = StyleSheet.create({
         fontSize:16,
         fontWeight: 'bold'
 
+    },
+
+    flatContainer: {
+        flexGrow: 1,
     }
 
 });
