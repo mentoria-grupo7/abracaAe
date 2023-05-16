@@ -7,7 +7,9 @@ import {
     View,
 } from 'react-native';
 import {styles} from './style'
+import {HeaderComponent} from '../../components/header/index'
 import { useNavigation } from '@react-navigation/native';
+
 
 export const Cadastro= () => {
     const navigation = useNavigation()

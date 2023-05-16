@@ -3,6 +3,7 @@ import { SafeAreaView,StyleSheet,Image } from 'react-native';
 import { StatusBar } from "expo-status-bar";
 import { Routes } from './src/routes'
 
+
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
