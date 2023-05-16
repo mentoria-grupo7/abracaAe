@@ -6,9 +6,5 @@ export const styles = StyleSheet.create({
     flexDirection:'column',
     justifyContent:'center',
     backgroundColor:'white'
-  },
-  cabecalho:{
-    width:'100%',
-    resizeMode:'contain',
-   }
+  }
 });

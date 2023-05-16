@@ -9,7 +9,10 @@ const {Screen,Navigator} = createNativeStackNavigator();
 export const Rota =() =>{
     return(
     <NavigationContainer>
-        <Navigator>
+        <Navigator                 
+                screenOptions={{
+                headerShown: false
+                }}>
             <Screen 
                 name='Home' 
                 component={Home}
