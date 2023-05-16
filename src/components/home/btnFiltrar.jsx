@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import {View,Text,TouchableOpacity,StyleSheet, Modal} from 'react-native'
+import {Text,TouchableOpacity,StyleSheet, Modal} from 'react-native'
 import { AntDesign } from '@expo/vector-icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Categorias } from './categorias';
+import { Categorias } from './categorias.jsx';
 
 
 
@@ -22,7 +22,9 @@ return(
                 >
                 <Categorias />
             </Modal>
-            <Text   style ={{fontWeight:'bold'}}>Mais recentes</Text>
+            <TouchableOpacity>
+                <Text   style ={{fontWeight:'bold'}}>Mais recentes</Text>
+            </TouchableOpacity>
         </ SafeAreaView> 
 )}
 
@@ -43,15 +45,5 @@ const styles = StyleSheet.create({
         fontWeight:'bold',
         flexDirection:'row',
         justifyContent:'space-around',
-    },
-    modalView:{
-        width:'80%',
-        minHeight:200,
-        backgroundColor:'#E0E0E0',
-        borderRadius:10,
-        marginLeft:10,
-        borderWidth:3,
-        borderColor:'#20171796'
-
     }
 })
