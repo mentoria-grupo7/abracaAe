@@ -6,15 +6,19 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 const { Screen , Navigator } = createNativeStackNavigator();
 
-export function internoScreenRoutes (){
+export function InternalRoutes (){
     return (
-        <Navigator>
+        <Navigator
+            screenOptions={{
+                headerShown: false
+            }}>
+
             <Screen 
-                name= 'Partners'
+                name='Partners'
                 component={Partners}
             />
             <Screen 
-                name= 'Search'
+                name='Search'
                 component={Search}
             />
         </Navigator>
