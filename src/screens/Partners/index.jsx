@@ -1,6 +1,5 @@
 import React from "react";
-import { StatusBar } from "expo-status-bar";
-import { View, Text } from "react-native";
+import { View, Text, ScrollView } from "react-native";
 import { styles } from "./style";
 import { PartnersCardList } from "./Card/PartnersCardList";
 
@@ -12,9 +11,11 @@ export const Partners = () => {
         <Text style={styles.subTitle}>Marcas que apoiam o projeto</Text>
       </View>
 
-      <View style={styles.container}>
-        <PartnersCardList />
-      </View>
+      <ScrollView>
+        <View style={styles.container}>
+          <PartnersCardList />
+        </View>
+      </ScrollView>
     </>
   );
 };

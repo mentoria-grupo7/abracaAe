@@ -5,20 +5,21 @@ import {
     TextInput, 
     TouchableOpacity, 
     View,
-    Image,
-    
-
 } from 'react-native';
 import {styles} from './style'
 import {HeaderComponent} from '../../components/header/index'
+import { useNavigation } from '@react-navigation/native';
+
 
 export const Cadastro= () => {
-    
+    const navigation = useNavigation()
+
+    console.log(navigation)
+
     return (
         <View style={styles.container}>
+            <Icon style = {styles.returnIcon} name ='left' size = {25} color = '#698499'
 
-            <HeaderComponent description = 'Login'
-            
             />
 
 
@@ -54,7 +55,12 @@ export const Cadastro= () => {
                 >
             </TextInput>
           
-            <TouchableOpacity style={styles.buttonCadastro}>
+            <TouchableOpacity 
+                    style={styles.buttonCadastro}
+                    onPress={()=>{
+                        navigation.navigate('InternalRoutes')
+                    }}
+                    >
                     <Text style={styles.buttonText}> Cadastrar. Seja bem vindo. </Text>               
                 </TouchableOpacity>
 
