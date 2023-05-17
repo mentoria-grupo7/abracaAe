@@ -1,6 +1,6 @@
 import React from "react";
 import { styles } from "./style";
-import { View, Image, TouchableOpacity,Text} from "react-native";
+import { View } from "react-native";
 import { CardItem } from "../../components/home/cardItem";
 import { Botoes } from "../../components/home/btnFiltrar";
 
