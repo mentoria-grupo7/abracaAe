@@ -2,24 +2,34 @@ import React from "react";
 
 import { Partners } from "../../screens/Partners";
 import { Search } from "../../screens/Search";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Home } from "../../screens/Home";
 import OngLocalization from "../../screens/OngLocalization";
+import Icon from "react-native-vector-icons/FontAwesome";
 
-const { Screen , Navigator } = createNativeStackNavigator();
+const { Screen , Navigator } = createBottomTabNavigator();
 
 export function InternalRoutes (){
+    const myScreenOptions = ({ route }) => ({
+        tabBarIcon:()=>{
+            let icon = ''
+            if(route.name === 'Home'){
+                icon = 'home'
+            }
+
+            return <Icon name={icon} size={30} color="#000" />
+        },
+        headerShown: false
+    })
+
     return (
         <Navigator
-            screenOptions={{
-                headerShown: false
-            }}>
+            screenOptions={myScreenOptions}>
 
             <Screen 
                 name='Home' 
                 component={Home}
             />
-
                 <Screen
                 name="OngLocalization"
                 component={OngLocalization}
