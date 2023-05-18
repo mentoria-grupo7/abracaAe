@@ -4,6 +4,7 @@ export const styles = StyleSheet.create({
     cabecalho: {
         width: "100%",
         height: "10%",
+        marginTop:-70,
         backgroundColor: 'rgba(78, 205, 196, 0.5)',
         justifyContent:'center'  
     },

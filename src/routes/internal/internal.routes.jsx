@@ -13,7 +13,7 @@ export function InternalRoutes (){
     const myScreenOptions = ({ route }) => ({
         tabBarIcon:()=>{
             let icon = ''
-            if(route.name === 'Home'){
+            if(route.name === 'Inicio'){
                 icon = 'home'
             }
 
@@ -27,7 +27,7 @@ export function InternalRoutes (){
             screenOptions={myScreenOptions}>
 
             <Screen 
-                name='Home' 
+                name='Inicio' 
                 component={Home}
             />
                 <Screen
@@ -36,11 +36,11 @@ export function InternalRoutes (){
                 />
 
             <Screen 
-                name='Partners'
+                name='Parceiros'
                 component={Partners}
             />
             <Screen 
-                name='Search'
+                name='Buscar'
                 component={Search}
             />
         </Navigator>
